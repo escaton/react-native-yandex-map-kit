@@ -40,4 +40,3 @@ dependencies {
         exclude group: "com.google.android.gms"
     }
 }
-  
