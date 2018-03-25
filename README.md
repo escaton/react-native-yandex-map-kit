@@ -20,6 +20,8 @@
 
 #### Android
 
+0. If you already run `react-native link` go to step 4.
+
 1.  Open up `android/app/src/main/java/[...]/MainActivity.java`
 
 * Add `import com.yandex.RNYandexMapKit.RNYandexMapKitPackage;` to the imports at the top of the file
