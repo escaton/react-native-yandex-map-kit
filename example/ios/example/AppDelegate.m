@@ -11,6 +11,7 @@
 
 #import <React/RCTBundleURLProvider.h>
 #import <React/RCTRootView.h>
+#import <YandexMapKit/YMKMapKitFactory.h>
 
 @implementation AppDelegate
 
@@ -31,6 +32,7 @@
   rootViewController.view = rootView;
   self.window.rootViewController = rootViewController;
   [self.window makeKeyAndVisible];
+  [YMKMapKit setApiKey:@"844d5468-fb6f-437c-92cf-2fb6c6a780d1"];
   return YES;
 }
 

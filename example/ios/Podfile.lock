@@ -1,0 +1,76 @@
+PODS:
+  - React (0.54.2):
+    - React/Core (= 0.54.2)
+  - react-native-yandex-map-kit (0.0.1):
+    - React
+    - YandexMapKit (~> 3.0.0)
+  - React/Core (0.54.2):
+    - yoga (= 0.54.2.React)
+  - React/DevSupport (0.54.2):
+    - React/Core
+    - React/RCTWebSocket
+  - React/fishhook (0.54.2)
+  - React/RCTActionSheet (0.54.2):
+    - React/Core
+  - React/RCTAnimation (0.54.2):
+    - React/Core
+  - React/RCTBlob (0.54.2):
+    - React/Core
+  - React/RCTGeolocation (0.54.2):
+    - React/Core
+  - React/RCTImage (0.54.2):
+    - React/Core
+    - React/RCTNetwork
+  - React/RCTLinkingIOS (0.54.2):
+    - React/Core
+  - React/RCTNetwork (0.54.2):
+    - React/Core
+  - React/RCTSettings (0.54.2):
+    - React/Core
+  - React/RCTText (0.54.2):
+    - React/Core
+  - React/RCTVibration (0.54.2):
+    - React/Core
+  - React/RCTWebSocket (0.54.2):
+    - React/Core
+    - React/fishhook
+    - React/RCTBlob
+  - YandexMapKit (3.0.0):
+    - YandexRuntime (~> 3.0)
+  - YandexRuntime (3.0.0)
+  - yoga (0.54.2.React)
+
+DEPENDENCIES:
+  - react-native-yandex-map-kit (from `../../`)
+  - React/Core (from `../node_modules/react-native`)
+  - React/DevSupport (from `../node_modules/react-native`)
+  - React/RCTActionSheet (from `../node_modules/react-native`)
+  - React/RCTAnimation (from `../node_modules/react-native`)
+  - React/RCTGeolocation (from `../node_modules/react-native`)
+  - React/RCTImage (from `../node_modules/react-native`)
+  - React/RCTLinkingIOS (from `../node_modules/react-native`)
+  - React/RCTNetwork (from `../node_modules/react-native`)
+  - React/RCTSettings (from `../node_modules/react-native`)
+  - React/RCTText (from `../node_modules/react-native`)
+  - React/RCTVibration (from `../node_modules/react-native`)
+  - React/RCTWebSocket (from `../node_modules/react-native`)
+  - yoga (from `../node_modules/react-native/ReactCommon/yoga/yoga.podspec`)
+
+EXTERNAL SOURCES:
+  React:
+    :path: ../node_modules/react-native
+  react-native-yandex-map-kit:
+    :path: ../../
+  yoga:
+    :path: ../node_modules/react-native/ReactCommon/yoga/yoga.podspec
+
+SPEC CHECKSUMS:
+  React: c237e42de9c70e5cac6eeb52b4cfd3a0910c1f00
+  react-native-yandex-map-kit: e8b77f0918a13dd27213622bd63097763fc6093c
+  YandexMapKit: c32b57caf297c610917d6f4b66e416f07f1ca894
+  YandexRuntime: 3922beb365a8f0c8ff9bd7ee914eae3efbb8103b
+  yoga: 55da126afc384965b96bff46652464373b330add
+
+PODFILE CHECKSUM: fabb3ed82c4e509b3800ffed2567cc793047d5f0
+
+COCOAPODS: 1.4.0
