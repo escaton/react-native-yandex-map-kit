@@ -4,23 +4,48 @@
 
 `$ npm install react-native-yandex-map-kit --save`
 
-### Mostly automatic installation
-
-* `$ react-native link react-native-yandex-map-kit`
-* Android continue from step 4 manual installation
-
-### Manual installation
+### Installation
 
 #### iOS
 
-1.  In XCode, in the project navigator, right click `Libraries` ➜ `Add Files to [your project's name]`
-2.  Go to `node_modules` ➜ `react-native-yandex-map-kit` and add `RNYandexMapKit.xcodeproj`
-3.  In XCode, in the project navigator, select your project. Add `libRNYandexMapKit.a` to your project's `Build Phases` ➜ `Link Binary With Libraries`
-4.  Run your project (`Cmd+R`)<
+1. Create or add the following content to `ios/Podfile`
+  ```
+    # You Podfile should look similar to this file. React Native currently does not support use_frameworks!
+    source 'https://github.com/CocoaPods/Specs.git'
+
+    platform :ios, '9.0'
+
+    target '_YOUR_PROJECT_TARGET_' do
+      rn_path = '../node_modules/react-native'
+      rn_yandex_mapkit_path = '../node_modules/react-native-yandex-map-kit'
+
+      pod 'yoga', path: "#{rn_path}/ReactCommon/yoga/yoga.podspec"
+      pod 'React', path: rn_path, subspecs: [
+        'DevSupport',
+        'Core',
+        'RCTActionSheet',
+        'RCTAnimation',
+        'RCTGeolocation',
+        'RCTImage',
+        'RCTLinkingIOS',
+        'RCTNetwork',
+        'RCTSettings',
+        'RCTText',
+        'RCTVibration',
+        'RCTWebSocket',
+        # 'BatchedBridge', # REMOVE COMMENT if you use RN <0.54
+      ]
+
+      pod 'react-native-yandex-map-kit', path: rn_yandex_mapkit_path
+    end
+  ```
+2. Edit `ios/%project%/AppDelegate.m` add `#import <YandexMapKit/YMKMapKitFactory.h>` and `[YMKMapKit setApiKey:@"844d5468-fb6f-437c-92cf-2fb6c6a780d1"];`
+3. Make sure your target is 9.0+
 
 #### Android
 
-0. If you already run `react-native link` go to step 4.
+0. Run `$ react-native link react-native-yandex-map-kit` and continue from step 4.
+  Or:
 
 1.  Open up `android/app/src/main/java/[...]/MainActivity.java`
 
