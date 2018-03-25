@@ -9,13 +9,13 @@ import {
   StyleSheet,
   View
 } from 'react-native';
-// import MapKit from '../src'
+import MapKit from '../src'
 
 type Props = {};
 export default class App extends Component<Props> {
   render() {
     return (
-      <View style={styles.container}/>
+      <MapKit style={styles.container}/>
     );
   }
 }
