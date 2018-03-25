@@ -47,7 +47,7 @@
 0. Run `$ react-native link react-native-yandex-map-kit` and continue from step 4.
   Or:
 
-1.  Open up `android/app/src/main/java/[...]/MainActivity.java`
+1.  Open up `android/app/src/main/java/[...]/MainApplication.java`
 
 * Add `import com.yandex.RNYandexMapKit.RNYandexMapKitPackage;` to the imports at the top of the file
 * Add `new RNYandexMapKitPackage()` to the list returned by the `getPackages()` method
