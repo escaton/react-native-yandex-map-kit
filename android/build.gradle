@@ -24,12 +24,6 @@ android {
     lintOptions {
         abortOnError false
     }
-    packagingOptions {
-        pickFirst 'lib/armeabi-v7a/libgnustl_shared.so'
-        pickFirst 'lib/arm64-v8a/libgnustl_shared.so'
-        pickFirst 'lib/x86_64/libgnustl_shared.so'
-        pickFirst 'lib/x86/libgnustl_shared.so'
-    }
 }
 
 repositories {
@@ -42,6 +36,8 @@ repositories {
 dependencies {
     compile 'com.facebook.react:react-native:+'
     
-    compile 'com.yandex.android:mapkit:3.0.0'
+    compile ('com.yandex.android:mapkit:3.0.0') {
+        exclude group: "com.google.android.gms"
+    }
 }
   
