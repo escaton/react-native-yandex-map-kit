@@ -1,20 +1,24 @@
 
 {
   "name": "react-native-yandex-map-kit",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.0.1",
+  "description": "React Native bridge to Yandex MapKit",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "react-native"
+    "react-native",
+    "mapkit",
+    "yandex"
   ],
-  "author": "",
-  "license": "",
+  "author": "escaton <escaton@yandex-team.ru>, yeti-or <yeti-or@yandex-team.ru>",
+  "license": "MPL-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/escaton/react-native-yandex-map-kit"
+  },
   "peerDependencies": {
-    "react-native": "^0.41.2",
-    "react-native-windows": "0.41.0-rc.1"
-
+    "react-native": "^0.54.2"
   }
 }
